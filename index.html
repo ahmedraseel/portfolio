@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed Raseel</title>
+    <meta name="description" content="Professional portfolio of Md. Rasal - Civil Engineer, Restaurant Entrepreneur, and Government Procurement Consultant specializing in infrastructure development and technology solutions." />
+    <meta name="author" content="Md. Rasal" />
+
+    <meta property="og:title" content="Md. Rasal - Engineer, Entrepreneur & Problem Solver" />
+    <meta property="og:description" content="Professional portfolio showcasing expertise in road/bridge construction, restaurant management, programming, and government procurement consulting (eGP system)." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: { extend: { colors: { background: 'hsl(222 47% 4%)', foreground: 'hsl(210 40% 98%)', card: 'hsl(222 47% 6%)', primary: 'hsl(197 100% 50%)', accent: 'hsl(197 100% 50%)', secondary: 'hsl(222 47% 8%)', 'muted-foreground': 'hsl(215.4 16.3% 65%)', border: 'hsl(222 47% 12%)' } } }
+      }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./public/favicon.ico" />
+  </head>
+  <body class="bg-background text-foreground">
+    <nav id="site-nav" class="fixed top-0 w-full z-50 transition-all duration-300">
+      <div class="container mx-auto px-6">
+        <div class="flex items-center justify-between py-4">
+          <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="text-2xl font-bold text-gradient">Raseel</button>
+          <div class="hidden lg:flex items-center space-x-8">
+            <a href="#about" data-scroll class="text-foreground hover:text-primary transition-colors duration-300 font-medium">About</a>
+            <a href="#experience" data-scroll class="text-foreground hover:text-primary transition-colors duration-300 font-medium">Experience</a>
+            <a href="#skills" data-scroll class="text-foreground hover:text-primary transition-colors duration-300 font-medium">Skills</a>
+            <a href="#services" data-scroll class="text-foreground hover:text-primary transition-colors duration-300 font-medium">Services</a>
+            <a href="#projects" data-scroll class="text-foreground hover:text-primary transition-colors duration-300 font-medium">Projects</a>
+            <a href="#contact" data-scroll class="text-foreground hover:text-primary transition-colors duration-300 font-medium">Contact</a>
+          </div>
+          <button id="mobile-menu-toggle" class="lg:hidden p-2 rounded-md hover:bg-card border border-border" aria-label="Open menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+        <div id="mobile-menu" class="lg:hidden bg-card/95 backdrop-blur-lg border border-border rounded-lg mt-2 p-4 hidden" data-open="false">
+          <div class="flex flex-col space-y-4">
+            <a href="#about" data-scroll class="text-left text-foreground hover:text-primary transition-colors duration-300 font-medium py-2">About</a>
+            <a href="#experience" data-scroll class="text-left text-foreground hover:text-primary transition-colors duration-300 font-medium py-2">Experience</a>
+            <a href="#skills" data-scroll class="text-left text-foreground hover:text-primary transition-colors duration-300 font-medium py-2">Skills</a>
+            <a href="#services" data-scroll class="text-left text-foreground hover:text-primary transition-colors duration-300 font-medium py-2">Services</a>
+            <a href="#projects" data-scroll class="text-left text-foreground hover:text-primary transition-colors duration-300 font-medium py-2">Projects</a>
+            <a href="#contact" data-scroll class="text-left text-foreground hover:text-primary transition-colors duration-300 font-medium py-2">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="min-h-screen hero-gradient flex items-center justify-center relative overflow-hidden">
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-80 h-80 bg-primary/15 rounded-full blur-3xl floating-element opacity-60"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl floating-element opacity-40"></div>
+        <div class="absolute top-3/4 left-1/3 w-64 h-64 bg-primary/8 rounded-full blur-2xl floating-element opacity-50"></div>
+        <div class="absolute top-1/3 right-1/3 w-48 h-48 bg-accent/6 rounded-full blur-2xl floating-element opacity-30"></div>
+        <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle at 1px 1px, hsl(var(--primary)) 1px, transparent 0), radial-gradient(circle at 25px 25px, hsl(var(--accent)) 0.5px, transparent 0); background-size: 50px 50px, 100px 100px"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-background/20 via-transparent to-background/30"></div>
+      </div>
+      <div class="container mx-auto px-6 hero-content mt-24 lg:mt-28">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7">
+            
+            <h1 class="text-6xl lg:text-8xl xl:text-9xl font-bold mb-8 leading-[0.85] fade-in-up stagger-1 tracking-tight"><span class="text-foreground drop-shadow-lg">Ahmed</span> <span class="gradient-text block relative">Raseel<span class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-primary via-accent to-primary opacity-60 rounded-full"></span></span></h1>
+            <div class="mb-10 fade-in-up stagger-2">
+              <p class="text-2xl lg:text-3xl xl:text-4xl text-primary font-bold mb-6 leading-tight tracking-wide">Engineer, Entrepreneur & Problem Solver</p>
+              <p class="text-lg lg:text-xl xl:text-2xl text-secondary-foreground leading-relaxed max-w-3xl font-medium">Building Infrastructure, Businesses, and Technology Solutions that make a lasting impact on communities and industries.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12 fade-in-up stagger-3">
+              <div class="glass-card rounded-3xl p-6 text-center group cursor-pointer"><div class="w-12 h-12 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"><i data-lucide="building" class="w-6 h-6 text-primary"></i></div><span class="text-base font-semibold text-foreground">Infrastructure</span></div>
+              <div class="glass-card rounded-3xl p-6 text-center group cursor-pointer"><div class="w-12 h-12 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"><i data-lucide="chef-hat" class="w-6 h-6 text-accent"></i></div><span class="text-base font-semibold text-foreground">Business</span></div>
+              <div class="glass-card rounded-3xl p-6 text-center group cursor-pointer"><div class="w-12 h-12 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-primary/20 to-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"><i data-lucide="code" class="w-6 h-6 text-primary"></i></div><span class="text-base font-semibold text-foreground">Technology</span></div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-6 fade-in-up stagger-4">
+              <button class="btn-hero group inline-flex items-center whitespace-nowrap" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })">View My Work <i data-lucide="arrow-down" class="w-5 h-5 ml-2 shrink-0"></i></button>
+              <button class="btn-outline-hero" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">Learn More</button>
+            </div>
+          </div>
+          <div class="lg:col-span-5 flex flex-col items-center">
+            <div class="profile-glow scale-in stagger-2 mb-10 group"><img src="./src/assets/profile-picture.png" alt="Md. Rasal - Professional Portrait" class="w-80 h-80 lg:w-96 lg:h-96 xl:w-[400px] xl:h-[400px] rounded-full object-cover border-4 border-primary/30 relative z-10 group-hover:scale-105 transition-all duration-500 shadow-2xl" /></div>
+            <div class="grid grid-cols-2 gap-6 w-full max-w-md">
+              <div class="glass-card rounded-3xl p-8 text-center fade-in-up stagger-3 group cursor-pointer"><div class="text-4xl font-black text-primary mb-2 group-hover:scale-110 transition-transform duration-300">4+</div><div class="text-sm font-medium text-muted-foreground">Years Experience</div></div>
+              <div class="glass-card rounded-3xl p-8 text-center fade-in-up stagger-4 group cursor-pointer"><div class="text-4xl font-black text-accent mb-2 group-hover:scale-110 transition-transform duration-300">10+</div><div class="text-sm font-medium text-muted-foreground">Projects Completed</div></div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="about" class="section-spacing">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16"><h2 class="text-4xl lg:text-5xl font-bold mb-6">About <span class="text-gradient">Me</span></h2><div class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto"></div></div>
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="fade-in-up"><h3 class="text-2xl font-semibold mb-6 text-primary">Engineer • Entrepreneur • Problem Solver</h3><p class="text-lg text-muted-foreground leading-relaxed mb-6">My career in road/bridge construction and restaurant management has been defined by solving complex, real-world problems, with deep expertise in procurement and tendering. A passion for systems thinking led me to programming, and I am now on a mission to leverage technology to create extraordinary solutions for societal good.</p><p class="text-lg text-muted-foreground leading-relaxed">From managing large-scale infrastructure projects to building a successful restaurant from scratch, I bring a unique perspective that combines engineering precision, business acumen, and technological innovation.</p></div>
+          <div class="fade-in-up stagger-2">
+            <h3 class="text-2xl font-semibold mb-8 text-primary">Education</h3>
+            <div class="space-y-6">
+              <div class="card-gradient glow-effect border border-border rounded-xl"><div class="p-6"><div class="flex items-start gap-4"><div class="p-3 bg-primary/10 rounded-lg"><i data-lucide="graduation-cap" class="w-6 h-6 text-primary"></i></div><div class="flex-1"><h4 class="font-semibold text-lg mb-2">B.Sc. in Computer Science & Engineering (CSE)</h4><p class="text-muted-foreground mb-1">Southeast University</p><div class="flex items-center gap-2 text-sm text-primary"><i data-lucide="calendar" class="w-4 h-4"></i>Expected 2025</div></div></div></div></div>
+              <div class="card-gradient glow-effect border border-border rounded-xl"><div class="p-6"><div class="flex items-start gap-4"><div class="p-3 bg-primary/10 rounded-lg"><i data-lucide="graduation-cap" class="w-6 h-6 text-primary"></i></div><div class="flex-1"><h4 class="font-semibold text-lg mb-2">Diploma in Civil Engineering</h4><p class="text-muted-foreground mb-1">Dhaka Polytechnic Institute</p><div class="flex items-center gap-2 text-sm text-primary"><i data-lucide="calendar" class="w-4 h-4"></i>CGPA 3.55/4.0</div></div></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section-spacing bg-secondary/20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16"><h2 class="text-4xl lg:text-5xl font-bold mb-6">Professional <span class="text-gradient">Experience</span></h2><div class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto"></div></div>
+        <div class="space-y-8">
+          <div class="card-gradient glow-effect border border-border rounded-xl fade-in-up"><div class="p-8"><div class="grid lg:grid-cols-4 gap-6"><div class="lg:col-span-1"><div class="flex items-center gap-4 mb-4"><div class="p-3 bg-primary/10 rounded-lg"><i data-lucide="building-2" class="w-8 h-8 text-primary"></i></div></div><h3 class="text-xl font-semibold mb-2">Road & Bridge Construction Professional</h3><p class="text-primary font-medium mb-4">Infrastructure Development</p><div class="space-y-2 text-sm text-muted-foreground"><div class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4"></i>2020 – Present</div><div class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4"></i>Dhaka</div></div></div><div class="lg:col-span-2"><h4 class="font-semibold mb-4 text-primary">Key Responsibilities</h4><ul class="space-y-2"><li class="flex items-start gap-3"><div class="w-2 h-2 bg-primary rounded-full mt-2"></div><span class="text-muted-foreground">Asphalt paving (DBM, BC) operations</span></li><li class="flex items-start gap-3"><div class="w-2 h-2 bg-primary rounded-full mt-2"></div><span class="text-muted-foreground">Bridge construction (pile foundation, girder launching, deck slab pouring)</span></li><li class="flex items-start gap-3"><div class="w-2 h-2 bg-primary rounded-full mt-2"></div><span class="text-muted-foreground">Quality control of roads, bridges, culverts</span></li><li class="flex items-start gap-3"><div class="w-2 h-2 bg-primary rounded-full mt-2"></div><span class="text-muted-foreground">New road projects from sub-grade to final asphalt surfacing</span></li></ul></div><div class="lg:col-span-1"><h4 class="font-semibold mb-4 text-primary">Skills Applied</h4><div class="flex flex-wrap gap-2"><span class="px-2 py-1 rounded bg-primary/10 text-primary border border-primary/20 text-sm">Quality Control</span><span class="px-2 py-1 rounded bg-primary/10 text-primary border border-primary/20 text-sm">Project Management</span><span class="px-2 py-1 rounded bg-primary/10 text-primary border border-primary/20 text-sm">Construction</span><span class="px-2 py-1 rounded bg-primary/10 text-primary border border-primary/20 text-sm">Engineering</span></div></div></div></div></div>
+          <div class="card-gradient glow-effect border border-border rounded-xl fade-in-up"><div class="p-8"><div class="grid lg:grid-cols-4 gap-6"><div class="lg:col-span-1"><div class="flex items-center gap-4 mb-4"><div class="p-3 bg-primary/10 rounded-lg"><i data-lucide="chef-hat" class="w-8 h-8 text-primary"></i></div></div><h3 class="text-xl font-semibold mb-2">Entrepreneur & Manager</h3><p class="text-primary font-medium mb-4">Wasfa Restaurant</p><div class="space-y-2 text-sm text-muted-foreground"><div class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4"></i>2022 – Present</div><div class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4"></i>Dhaka</div></div></div><div class="lg:col-span-2"><h4 class="font-semibold mb-4 text-primary">Key Responsibilities</h4><ul class="space-y-2"><li class="flex items-start gap-3"><div class="w-2 h-2 bg-primary rounded-full mt-2"></div><span class="text-muted-foreground">Built a Chinese restaurant from scratch</span></li><li class="flex items-start gap-3"><div class="w-2 h-2 bg-primary rounded-full mt-2"></div><span class="text-muted-foreground">Directed growth, branding, and customer experience</span></li><li class="flex items-start gap-3"><div class="w-2 h-2 bg-primary rounded-full mt-2"></div><span class="text-muted-foreground">Managed operations, staff, and finances</span></li><li class="flex items-start gap-3"><div class="w-2 h-2 bg-primary rounded-full mt-2"></div><span class="text-muted-foreground">Implemented strategic business development initiatives</span></li></ul></div><div class="lg:col-span-1"><h4 class="font-semibold mb-4 text-primary">Skills Applied</h4><div class="flex flex-wrap gap-2"><span class="px-2 py-1 rounded bg-primary/10 text-primary border border-primary/20 text-sm">Business Management</span><span class="px-2 py-1 rounded bg-primary/10 text-primary border border-primary/20 text-sm">Operations</span><span class="px-2 py-1 rounded bg-primary/10 text-primary border border-primary/20 text-sm">Branding</span><span class="px-2 py-1 rounded bg-primary/10 text-primary border border-primary/20 text-sm">Finance</span></div></div></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-spacing">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16"><h2 class="text-4xl lg:text-5xl font-bold mb-6">Core <span class="text-gradient">Skills</span></h2><div class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-6"></div><p class="text-xl text-muted-foreground max-w-3xl mx-auto">A diverse skill set spanning engineering, technology, and business management</p></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="card-gradient glow-effect border border-border rounded-xl text-center p-6 fade-in-up"><div class="mb-4 flex justify-center"><div class="p-4 bg-primary/10 rounded-xl"><i data-lucide="code" class="w-8 h-8 text-primary"></i></div></div><h3 class="font-semibold text-lg mb-2">Programming</h3><p class="text-sm text-muted-foreground">Modern web development technologies</p></div>
+          <div class="card-gradient glow-effect border border-border rounded-xl text-center p-6 fade-in-up"><div class="mb-4 flex justify-center"><div class="p-4 bg-primary/10 rounded-xl"><i data-lucide="ruler" class="w-8 h-8 text-primary"></i></div></div><h3 class="font-semibold text-lg mb-2">AutoCAD Civil 3D</h3><p class="text-sm text-muted-foreground">Advanced civil engineering design</p></div>
+          <div class="card-gradient glow-effect border border-border rounded-xl text-center p-6 fade-in-up"><div class="mb-4 flex justify-center"><div class="p-4 bg-primary/10 rounded-xl"><i data-lucide="lightbulb" class="w-8 h-8 text-primary"></i></div></div><h3 class="font-semibold text-lg mb-2">Problem Solving</h3><p class="text-sm text-muted-foreground">Complex analytical thinking</p></div>
+          <div class="card-gradient glow-effect border border-border rounded-xl text-center p-6 fade-in-up"><div class="mb-4 flex justify-center"><div class="p-4 bg-primary/10 rounded-xl"><i data-lucide="test-tube" class="w-8 h-8 text-primary"></i></div></div><h3 class="font-semibold text-lg mb-2">Materials Testing</h3><p class="text-sm text-muted-foreground">Quality assurance protocols</p></div>
+          <div class="card-gradient glow-effect border border-border rounded-xl text-center p-6 fade-in-up"><div class="mb-4 flex justify-center"><div class="p-4 bg-primary/10 rounded-xl"><i data-lucide="shield-check" class="w-8 h-8 text-primary"></i></div></div><h3 class="font-semibold text-lg mb-2">Quality Control & Assurance</h3><p class="text-sm text-muted-foreground">Construction standards compliance</p></div>
+          <div class="card-gradient glow-effect border border-border rounded-xl text-center p-6 fade-in-up"><div class="mb-4 flex justify-center"><div class="p-4 bg-primary/10 rounded-xl"><i data-lucide="users" class="w-8 h-8 text-primary"></i></div></div><h3 class="font-semibold text-lg mb-2">Project & Business Management</h3><p class="text-sm text-muted-foreground">Leadership and strategic planning</p></div>
+          <div class="card-gradient glow-effect border border-border rounded-xl text-center p-6 fade-in-up"><div class="mb-4 flex justify-center"><div class="p-4 bg-primary/10 rounded-xl"><i data-lucide="file-text" class="w-8 h-8 text-primary"></i></div></div><h3 class="font-semibold text-lg mb-2">Tendering & Bid Management</h3><p class="text-sm text-muted-foreground">Government procurement expertise</p></div>
+          <div class="card-gradient glow-effect border border-border rounded-xl text-center p-6 fade-in-up"><div class="mb-4 flex justify-center"><div class="p-4 bg-primary/10 rounded-xl"><i data-lucide="building" class="w-8 h-8 text-primary"></i></div></div><h3 class="font-semibold text-lg mb-2">Road & Bridge Construction</h3><p class="text-sm text-muted-foreground">Infrastructure development</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section-spacing bg-secondary/20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16"><h2 class="text-4xl lg:text-5xl font-bold mb-6">Professional <span class="text-gradient">Services</span></h2><div class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-6"></div><p class="text-xl text-muted-foreground max-w-3xl mx-auto">Specialized consulting services leveraging deep expertise in government procurement</p></div>
+        <div class="max-w-4xl mx-auto">
+          <div class="card-gradient glow-effect border border-border rounded-xl fade-in-up"><div class="p-8 lg:p-12"><div class="grid lg:grid-cols-2 gap-8 items-center"><div><div class="flex items-center gap-4 mb-6"><div class="p-4 bg-primary/10 rounded-xl"><i data-lucide="file-check" class="w-10 h-10 text-primary"></i></div><h3 class="text-2xl lg:text-3xl font-bold">Government Procurement Consulting</h3></div><p class="text-lg text-muted-foreground mb-6 leading-relaxed">Expert guidance through Bangladesh's e-Government Procurement (eGP) system. I provide comprehensive support for tender preparation, bid management, and procurement strategy development.</p><div class="space-y-3 mb-8"><div class="flex items-start gap-3"><div class="w-2 h-2 bg-primary rounded-full mt-2"></div><span class="text-muted-foreground">eGP System Navigation & Compliance</span></div><div class="flex items-start gap-3"><div class="w-2 h-2 bg-primary rounded-full mt-2"></div><span class="text-muted-foreground">Tender Document Preparation</span></div><div class="flex items-start gap-3"><div class="w-2 h-2 bg-primary rounded-full mt-2"></div><span class="text-muted-foreground">Bid Strategy Development</span></div><div class="flex items-start gap-3"><div class="w-2 h-2 bg-primary rounded-full mt-2"></div><span class="text-muted-foreground">Procurement Process Optimization</span></div></div><button class="btn-hero group" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Get Consultation <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i></button></div><div class="relative"><div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl"></div><div class="relative bg-card/80 backdrop-blur-sm rounded-2xl p-8 border border-border"><h4 class="text-xl font-semibold mb-4 text-primary">Why Choose My Services?</h4><ul class="space-y-3 text-sm text-muted-foreground"><li class="flex items-start gap-3"><div class="w-1.5 h-1.5 bg-primary rounded-full mt-2"></div><span>Years of hands-on experience in government procurement</span></li><li class="flex items-start gap-3"><div class="w-1.5 h-1.5 bg-primary rounded-full mt-2"></div><span>Deep understanding of construction and infrastructure projects</span></li><li class="flex items-start gap-3"><div class="w-1.5 h-1.5 bg-primary rounded-full mt-2"></div><span>Technology-driven approach to procurement optimization</span></li><li class="flex items-start gap-3"><div class="w-1.5 h-1.5 bg-primary rounded-full mt-2"></div><span>Proven track record in successful project delivery</span></li></ul></div></div></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-spacing">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16"><h2 class="text-4xl lg:text-5xl font-bold mb-6">Featured <span class="text-gradient">Projects</span></h2><div class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-6"></div><p class="text-xl text-muted-foreground max-w-3xl mx-auto">Showcasing impactful projects across infrastructure development and business creation</p></div>
+        <div class="grid lg:grid-cols-2 gap-8">
+          <div class="card-gradient glow-effect border border-border rounded-xl group fade-in-up"><div class="p-8"><div class="flex items-start justify-between mb-6"><div class="flex items-center gap-4"><div class="p-3 bg-primary/10 rounded-xl"><i data-lucide="building-2" class="w-8 h-8 text-primary"></i></div><div><span class="inline-block mb-2 px-2 py-1 rounded bg-primary/10 text-primary border border-primary/20 text-xs">Infrastructure</span><h3 class="text-xl font-bold">Bridge & Approach Road Construction</h3></div></div></div><p class="text-muted-foreground mb-6 leading-relaxed">Led comprehensive infrastructure development project involving bridge construction with pile foundations, girder launching, and deck slab installation. Managed approach road construction from sub-grade preparation to final asphalt surfacing.</p><div class="mb-6"><h4 class="font-semibold text-primary mb-3">Key Contributions</h4><ul class="space-y-2"><li class="flex items-start gap-3"><div class="w-1.5 h-1.5 bg-primary rounded-full mt-2"></div><span class="text-sm text-muted-foreground">Quality assurance protocols implementation</span></li><li class="flex items-start gap-3"><div class="w-1.5 h-1.5 bg-primary rounded-full mt-2"></div><span class="text-sm text-muted-foreground">Structural construction supervision</span></li><li class="flex items-start gap-3"><div class="w-1.5 h-1.5 bg-primary rounded-full mt-2"></div><span class="text-sm text-muted-foreground">Road surfacing & finishing operations</span></li><li class="flex items-start gap-3"><div class="w-1.5 h-1.5 bg-primary rounded-full mt-2"></div><span class="text-sm text-muted-foreground">Materials testing & compliance verification</span></li></ul></div><div class="mb-6"><h4 class="font-semibold text-primary mb-3">Technologies & Skills</h4><div class="flex flex-wrap gap-2"><span class="px-2 py-1 rounded border border-primary/30 text-muted-foreground text-xs">AutoCAD Civil 3D</span><span class="px-2 py-1 rounded border border-primary/30 text-muted-foreground text-xs">Quality Control</span><span class="px-2 py-1 rounded border border-primary/30 text-muted-foreground text-xs">Project Management</span><span class="px-2 py-1 rounded border border-primary/30 text-muted-foreground text-xs">Engineering Analysis</span></div></div><div class="bg-primary/5 rounded-lg p-4 mb-6 border border-primary/10"><h4 class="font-semibold text-primary mb-2">Project Impact</h4><p class="text-sm text-muted-foreground">Successfully delivered critical infrastructure connecting communities with enhanced safety standards</p></div><button class="btn-outline-hero w-full group" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Learn More About This Project <i data-lucide="external-link" class="w-4 h-4 ml-2"></i></button></div></div>
+          <div class="card-gradient glow-effect border border-border rounded-xl group fade-in-up"><div class="p-8"><div class="flex items-start justify-between mb-6"><div class="flex items-center gap-4"><div class="p-3 bg-primary/10 rounded-xl"><i data-lucide="chef-hat" class="w-8 h-8 text-primary"></i></div><div><span class="inline-block mb-2 px-2 py-1 rounded bg-primary/10 text-primary border border-primary/20 text-xs">Business Development</span><h3 class="text-xl font-bold">Wasfa Restaurant - Business Development</h3></div></div></div><p class="text-muted-foreground mb-6 leading-relaxed">Built a Chinese restaurant from conception to successful operation. Developed comprehensive business strategy, managed construction build-out, established operational systems, and drove growth through strategic branding and customer experience optimization.</p><div class="mb-6"><h4 class="font-semibold text-primary mb-3">Key Contributions</h4><ul class="space-y-2"><li class="flex items-start gap-3"><div class="w-1.5 h-1.5 bg-primary rounded-full mt-2"></div><span class="text-sm text-muted-foreground">Complete business creation & launch</span></li><li class="flex items-start gap-3"><div class="w-1.5 h-1.5 bg-primary rounded-full mt-2"></div><span class="text-sm text-muted-foreground">Brand development & positioning</span></li><li class="flex items-start gap-3"><div class="w-1.5 h-1.5 bg-primary rounded-full mt-2"></div><span class="text-sm text-muted-foreground">Operational system design</span></li><li class="flex items-start gap-3"><div class="w-1.5 h-1.5 bg-primary rounded-full mt-2"></div><span class="text-sm text-muted-foreground">Financial management & growth strategy</span></li></ul></div><div class="mb-6"><h4 class="font-semibold text-primary mb-3">Technologies & Skills</h4><div class="flex flex-wrap gap-2"><span class="px-2 py-1 rounded border border-primary/30 text-muted-foreground text-xs">Business Planning</span><span class="px-2 py-1 rounded border border-primary/30 text-muted-foreground text-xs">Operations Management</span><span class="px-2 py-1 rounded border border-primary/30 text-muted-foreground text-xs">Branding</span><span class="px-2 py-1 rounded border border-primary/30 text-muted-foreground text-xs">Financial Analysis</span></div></div><div class="bg-primary/5 rounded-lg p-4 mb-6 border border-primary/10"><h4 class="font-semibold text-primary mb-2">Project Impact</h4><p class="text-sm text-muted-foreground">Created sustainable business model with strong local market presence and customer loyalty</p></div><button class="btn-outline-hero w-full group" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Learn More About This Project <i data-lucide="external-link" class="w-4 h-4 ml-2"></i></button></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-spacing bg-secondary/20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16"><h2 class="text-4xl lg:text-5xl font-bold mb-6">Let's <span class="text-gradient">Connect</span></h2><div class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-6"></div><p class="text-xl text-muted-foreground max-w-3xl mx-auto">Ready to discuss your next project or explore collaboration opportunities? I'd love to hear from you.</p></div>
+        <div class="max-w-4xl mx-auto"><div class="card-gradient glow-effect border border-border rounded-xl fade-in-up"><div class="p-8 lg:p-12"><div class="grid lg:grid-cols-2 gap-12"><div><h3 class="text-2xl font-bold mb-6 text-primary">Get In Touch</h3><p class="text-muted-foreground mb-8 leading-relaxed">Whether you need consultation on government procurement, infrastructure projects, or technology solutions, I'm here to help bring your vision to life.</p><div class="space-y-6"><div class="flex items-center gap-4"><div class="p-3 bg-primary/10 rounded-lg"><i data-lucide="mail" class="w-6 h-6 text-primary"></i></div><div><h4 class="font-semibold">Email</h4><p class="text-muted-foreground">Available upon request</p></div></div><div class="flex items-center gap-4"><div class="p-3 bg-primary/10 rounded-lg"><i data-lucide="message-square" class="w-6 h-6 text-primary"></i></div><div><h4 class="font-semibold">Response Time</h4><p class="text-muted-foreground">Within 24 hours</p></div></div></div><div class="mt-8 p-6 bg-primary/5 rounded-lg border border-primary/10"><h4 class="font-semibold text-primary mb-2">Areas of Expertise</h4><ul class="text-sm text-muted-foreground space-y-1"><li>• Government Procurement (eGP System)</li><li>• Infrastructure & Construction Projects</li><li>• Business Development & Management</li><li>• Technology Solutions & Programming</li></ul></div></div><div><h3 class="text-2xl font-bold mb-6 text-primary">Send a Message</h3><form id="contact-form" class="space-y-6"><div><label for="name" class="text-sm font-medium mb-2 block">Full Name</label><div class="relative"><i data-lucide="user" class="absolute left-3 top-3 w-5 h-5 text-muted-foreground"></i><input id="name" name="name" placeholder="Your full name" class="pl-10 w-full bg-background border border-border focus:border-primary px-3 py-2 rounded-md outline-none" required /></div></div><div><label for="email" class="text-sm font-medium mb-2 block">Email Address</label><div class="relative"><i data-lucide="mail" class="absolute left-3 top-3 w-5 h-5 text-muted-foreground"></i><input id="email" name="email" type="email" placeholder="your.email@example.com" class="pl-10 w-full bg-background border border-border focus:border-primary px-3 py-2 rounded-md outline-none" required /></div></div><div><label for="message" class="text-sm font-medium mb-2 block">Message</label><textarea id="message" name="message" rows="6" placeholder="Tell me about your project or inquiry..." class="w-full bg-background border border-border focus:border-primary px-3 py-2 rounded-md outline-none resize-none" required></textarea></div><button type="submit" class="btn-hero w-full group">Send Message <i data-lucide="send" class="w-5 h-5 ml-2"></i></button></form></div></div></div></div></div>
+      </div>
+    </section>
+
+    <footer class="border-t border-border py-8">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4"><div class="text-center md:text-left"><p class="text-muted-foreground">© 2024 Md. Rasal — Built with passion for excellence</p></div><div class="flex items-center gap-6"><button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="text-muted-foreground hover:text-primary transition-colors duration-300">Back to Top</button></div></div>
+        <div class="mt-6 pt-6 border-t border-border text-center"><p class="text-sm text-muted-foreground">Engineer • Entrepreneur • Problem Solver</p></div>
+      </div>
+    </footer>
+
+    <script>
+      window.addEventListener('DOMContentLoaded', () => { if (window.lucide) window.lucide.createIcons(); });
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
